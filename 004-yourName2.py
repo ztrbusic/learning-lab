@@ -4,4 +4,3 @@ while True:
     if name == 'your name':
         break
 print('Thank you!')
-input()
