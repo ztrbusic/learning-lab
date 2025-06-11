@@ -1,6 +1,6 @@
 import math
 
-
+#Inputs the original recipe tray size and ingredient amounts
 print("Write the original recipe tray size:")
 originalTray = int(input())
 
@@ -34,15 +34,17 @@ originalFillingSugar = int(input())
 print("Write the original recipe mileram amount:")
 originalMileram = int(input())
 
+#Inputs the target tray size
 print("Write the target recipe tray size:")
 targetTray = int(input())
 
+#Calculates the ratio between original recipe and target tray sizes
 originalTrayArea = math.pi * (originalTray ** 2)
 targetTrayArea = math.pi * (targetTray ** 2)
 trayRatio = targetTrayArea / originalTrayArea
-
 print("Your tray ratio is " + str(trayRatio) + ".")
 
+#Calculates the new, target, ingredient amounts using the tray ratio
 targetFlour = originalFlour * trayRatio
 targetSugar = originalSugar * trayRatio
 targetBakingPowder = originalBakingPowder * trayRatio
@@ -54,6 +56,7 @@ targetVanillaPudding = originalVanillaPudding * trayRatio
 targetFillingSugar = originalFillingSugar * trayRatio
 targetMileram = originalMileram * trayRatio
 
+#Rounds and prints the new ingredient amounts 
 print("Your target ingredient amounts are:")
 print("Flour: " + str(round(targetFlour, 2)))
 print("Baking Powder: " + str(round(targetBakingPowder, 2)))
