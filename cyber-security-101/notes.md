@@ -19,7 +19,7 @@
 	- `&`, `&&`, `>`, `>>`
 - Linux switches:
 	- `-a`, `-all`, `--help`
--Linux system directories:
+- Linux system directories:
 	- **/etc** - system files
 	- **/var** - data frequently accessed/written by services or applications
 	- **/root** - root user folder
