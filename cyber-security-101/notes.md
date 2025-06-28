@@ -49,3 +49,10 @@
 	- **NTFS** - New Technology File System
 	- **FAT** - File Allocation Table
 	- **HPFS** - High Performance File System
+	- **ADS** - Alternate Data Streams - file attribute in NTFS ($DATA)
+	- **WMI** - Windows management Instrumentation
+- `cmd` commands:
+	- `hostname`, `whoami`, `ipconfig`, `netstat`, `net`, `net help`
+	- `/?` - command to retrieve help manual for a command (e.g. `ipconfig /?`)
+	- `cls` - clear command prompt screen
+	
