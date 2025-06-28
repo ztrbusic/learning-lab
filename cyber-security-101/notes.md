@@ -45,14 +45,26 @@
 	- `fg` - make process run in foreground again
 	- `cron` - schedule tasks
 
-- Windows notes
+- Windows notes:
 	- **NTFS** - New Technology File System
 	- **FAT** - File Allocation Table
 	- **HPFS** - High Performance File System
 	- **ADS** - Alternate Data Streams - file attribute in NTFS ($DATA)
-	- **WMI** - Windows management Instrumentation
+	- **WMI** - Windows Management Instrumentation
+	- **VSS** - Volume Shadow Copy Service
 - `cmd` commands:
 	- `hostname`, `whoami`, `ipconfig`, `netstat`, `net`, `net help`
 	- `/?` - command to retrieve help manual for a command (e.g. `ipconfig /?`)
 	- `cls` - clear command prompt screen
-	
+- Windows advanced notes:
+	- `control /name Microsoft.WindowsUpdate`
+	- firewall
+		- **domain** - networks where the host can authenticate to domain controller
+		- **private** - private or home networks
+		- **public** - e.g. WiFi hotspots, airports etc.
+		- `WF.msc`
+- Windows Active Directory:
+	- **Domain Controller**
+	- **Active Directory Domain Service (AD DS)**
+	- Users - **security principals**
+	- Group Policy Management
