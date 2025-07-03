@@ -28,3 +28,9 @@
 - functions do not use global variables, they need to be set inside the function
 - dictionaries are mutable and it is not needed to return something in functions because they are modified in place
 	- except if you assing a new variable to function output, then the new variable will be `None`
+
+## 2025-07-03
+**Dictionaries and making a library program**
+- `a = input()` and `shelves[a] = []` - creates a new shelf
+- `shelves[shelf_choice].append(new_book)` - adds a new book to the chosen shelf
+- `print(shelves.keys())` - always use `()` when printing keys 
