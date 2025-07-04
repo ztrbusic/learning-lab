@@ -33,4 +33,8 @@
 **Dictionaries and making a library program**
 - `a = input()` and `shelves[a] = []` - creates a new shelf
 - `shelves[shelf_choice].append(new_book)` - adds a new book to the chosen shelf
-- `print(shelves.keys())` - always use `()` when printing keys 
+- `print(shelves.keys())` - always use `()` when printing keys
+
+## 2025-07-04
+**Library program - cont'd**
+- `input()` always returns string - can't compare with `== 1`
