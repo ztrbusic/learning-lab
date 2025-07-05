@@ -1,6 +1,5 @@
 # Start Your Cyber Security Journey
 
-
 - `dirb` - web content scanner, brute forces hidden directories and files by guessing common names from a wordlist
 - **DFIR** - Digital Forensics and Incident Response
 - **SIEM** - Security Information and Event Management

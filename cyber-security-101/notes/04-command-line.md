@@ -15,6 +15,7 @@
 		- `cd`, `dir /a /s`, `tree`, `mkdir`, `rmdir`
 		- `type`, `copy`, `move`, `del`, `erase`
 		- `tasklist`
+
 - **PowerShell**
 	- CLI + scripting language on .NET framework
 	- object-oriented
@@ -39,6 +40,7 @@
 	- `Get-FileHash`
 	- **IOC** - indicator of compromise
  	- `Invoke-Command`
+
 - **LinuxShells**
 	- when interacting with a shell, I need to be in the directory where I want to perform operations
 	- **Bash** - Bourne Again Shell
