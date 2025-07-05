@@ -23,4 +23,4 @@
 		- addresses have six bytes - MAC address (Media Access Control)
 			- expressed in hexadecimal format: _a4:c3:f0:85:ac:2d_
 				- each two hexadecimal digits are one byte
-	![OSI model Layer 2](../assets/images/01-layer-2-smaller.png)
+	![OSI model Layer 2](../assets/images/01-layer-2-smaller-1.png)
