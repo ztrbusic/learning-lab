@@ -60,6 +60,9 @@
 		return {}
 	```
 
+**Automate the Boring Stuff - cont'd - Manipulating Strings**
+- escape characters - `\'`, `\"`, `\t`, `\n`, `\\`
+
 
 
 
