@@ -1,4 +1,4 @@
-# Python Notes 1
+# Python Learning Notes
 ## 2025-06-30
 **Dictionaries**
 - unordered except from v3.7:
