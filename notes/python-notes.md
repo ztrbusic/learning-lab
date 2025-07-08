@@ -44,8 +44,8 @@
 - **JSON** - JavaScript Object Notation
 - write to file:
 	```python
-	with open("filename", "w", encoding="utf-8") as f:
-		json.dump(dictname, f, ensure_ascii=False, indent=2)
+with open("filename", "w", encoding="utf-8") as f:
+	json.dump(dictname, f, ensure_ascii=False, indent=2)
 	```
 	- `with open` -  creates context manager, automatically closes files
 	- `"w"` - opens file in write mode
@@ -73,4 +73,4 @@
 
 
 
-	
+
