@@ -7,7 +7,7 @@ def load_from_file():
 	except FileNotFoundError:
 		return {}
 
-shelves = load_from_file() 
+shelves = load_from_file()
 
 # Add new shelf
 def add_shelf(shelves):
