@@ -1,4 +1,5 @@
 import json
+import pprint
 
 def load_from_file():
 	try:
@@ -11,12 +12,14 @@ shelves = load_from_file()
 
 # Add new shelf
 def add_shelf(shelves):
-	shelf_name = input("Enter shelf name: ")
-	if shelf_name not in shelves:
-		shelves[shelf_name] = []
-		save_to_file(shelves)
-	else:
-		print("This shelf already exists!")
+	while True:
+		shelf_name = input("Enter shelf name:")
+		if shelf_name in shelves:
+			print("This shelf already exists!")
+		else:
+			shelves[shelf_name] = []
+			save_to_file(shelves)
+			break
 	print(shelves)
 	return shelves
 
@@ -36,7 +39,7 @@ def add_book(shelves):
 # List books in shelf
 def list_books(shelves):
 	print("Pick a shelf.")
-	print(shelves.keys())
+	pprint.pprint(shelves.keys())
 	shelf_pick = input()
 	print(shelves[shelf_pick])
 
@@ -66,7 +69,7 @@ def save_to_file(shelves):
 	with open("library.json", "w", encoding="utf-8")as f:
 		json.dump(shelves, f, ensure_ascii=False, indent=2)
 
-print("What do you want to do? 1 - Add new shelf, 2 - Add new book, 3 - List books in a shelf, 4 - Search for a book")
+print("What do you want to do?\n1 - Add new shelf\n2 - Add new book\n3 - List books in a shelf\n4 - Search for a book")
 
 choice = input()
 menu(choice)

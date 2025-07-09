@@ -60,8 +60,85 @@
 		return {}
 	```
 
+## 2025-07-09
+- `return` - exits the whole function
+- `break` - exits just the `while True` loop and function continues
+
 **Automate the Boring Stuff - cont'd - Manipulating Strings**
 - escape characters - `\'`, `\"`, `\t`, `\n`, `\\`
+- raw string - `print(r"That is Carol\'s cat.")`
+	- useful for file paths
+- multiline strings - `"""` or `'''`
+	- all quotes, tabs or newlines are considered a part of the string
+	- used for comments that span multiple lines
+- strings are indexed and can be sliced
+- `in` and `not` can be used (case sensitive)
+	```python
+	"Hello" in "Hello word"
+	True
+	```
+- **string interpolation** - `%s`
+	- str() - doesn't need to be called
+	`"My name is %s. I am %s years old." % (name, age)`
+- **f-strings** - `f""`
+	- `f"My name is {name}. I am {age} years old."`
+	- if _int_ it can be modified - `{age + 1}`
+- `.upper()` and `.lower()`
+	- `variable.upper()`
+	- do not change string inside variable unless - `variable = variable.upper()`
+	- useful for normalizing inputs (`if input.lower()`)
+- `.isupper()` and `.islower()` return Boolean
+	- all have to be lower or upper, just letters are checked
+- `.isalpha()` - only letters
+- `.isalnum()` - only letters and numbers
+- `.isdecimal()` - only numbers
+- `.isspace()` - only spaces, tabs, and newlines
+- `.istitle()` - only words that begin with uppercase, followed by lowercase letters
+- `.startswith()`, `.endswith()`
+- `.join()` and `.split()`
+	- can join a list of strings or split a string into a list
+	- `", ".join(["cats", "rats", "bats"])`
+	- `"My name is Simon".split()`
+- `.partition()` - `"Hello world!".partition("w")` - `("Hello", "w", "orld!")`
+	- returns a tuple of three substrings
+	- only first occurence of `"w"`
+	- if separator string not found returns one full string and two empty
+- `.rjust()`, `.ljust()`, `.center()`
+	- e.g. `"Hello".rjust(10)` - "Hello" is 5 characters - 5 spaces added to its left to make a string of 10 characters
+	- e.g. `"Hello".rjust(20, ".")` - specifies a fill character
+- `.strip()`, `.lstrip()`, `.rstrip()` - strips characters
+- _Unicode code point_ - `ord("A")`
+- **pyperclip** module - has `copy()` and `paste()`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
