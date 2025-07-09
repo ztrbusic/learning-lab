@@ -4,7 +4,7 @@ This is my personal repository for learning Python. It includes both code exerci
 
 ## 🚀 Highlights
 
-- 📚 [**Numerus Currens**](projects/03-numerus-currens.py) is a simple console-based library management simulator. It helps users practice entering, checking, and updating book records using basic text input and file handling in Python. Users can add shelves, add books to specific shelves, list all books, and search for books by keyword.
+- 📚 [**Numerus Currens**](projects/02-numerus-currens.py) is a simple console-based library management simulator. It helps users practice entering, checking, and updating book records using basic text input and file handling in Python. Users can add shelves, add books to specific shelves, list all books, and search for books by keyword.
 
 ## 📁 Structure
 
