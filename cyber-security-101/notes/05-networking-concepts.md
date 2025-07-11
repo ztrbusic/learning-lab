@@ -26,6 +26,7 @@
 <p align="center">
 <img src="../assets/images/01-OSI-layer-2.png" alt="OSI model Layer 2" width="40%">
 </p>
+
 - **3. Network**
 	- sending data between different networks
 	- examples:
