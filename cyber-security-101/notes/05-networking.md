@@ -77,6 +77,16 @@
 		- three-way handshake - SYN, SYN-ACK and ACK
 - **encapsulation**
 	- layers adding headers
+- `telnet` - Teletype Network - remote terminal connection
+
+# Networking Essentials
+
+- **DHCP** - Dynamic Host Configuration Protocol
+	- application level protocol that relies on UDP
+	- steps - **D O R A** - Discover, Offer, Accept Acknowledge
+- **ARP** - Address Resolution Protocol - enables to find MAC addresses of another devices on the Ethernet
+- **ICMP** - Internet Control Message Protocol - network diagnostics and error reporting
+	- `ping` and `traceroute`
 
 
 
