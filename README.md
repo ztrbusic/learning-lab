@@ -3,10 +3,10 @@
 This repository contains my structured notes and scripts from working through the **TryHackMe** paths. It serves as a personal knowledge base and hands-on practice record as I build skills in Linux, networking, Windows, and more.
 
 ## 🗂️ Structure
-
-- `assets/` — Supporting visuals used in notes.
-- `notes/` — Markdown files with topic-based notes.
-- `scripts/` — Shell scripts and practical exercises for various topics.
+- `_path_name_`
+	- `assets/` — Supporting visuals used in notes.
+	- `notes/` — Markdown files with topic-based notes.
+	- `scripts/` — Shell scripts and practical exercises for various topics.
 
 ## ⚙️ Tools & Tech
 
