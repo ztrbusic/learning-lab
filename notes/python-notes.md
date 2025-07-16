@@ -110,6 +110,20 @@
 - _Unicode code point_ - `ord("A")`
 - **pyperclip** module - has `copy()` and `paste()`
 
+## 2025-07-16
+**Started RPG game program**
+- used `sys.stdout` for printing text one character at a time
+	- ```
+	def slow_print(text, delay):
+		for character in text:
+			sys.stdout.write(character)
+			sys.stdout.flush()
+			time.sleep(delay)
+		print()
+	```
+	- `.write` - prints without newline
+	- `.flush` - forces to show immediately (no buffering)
+	- `time.delay` - add delay per character
 
 
 
