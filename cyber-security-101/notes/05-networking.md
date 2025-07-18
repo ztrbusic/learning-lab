@@ -92,6 +92,75 @@
 	- _EIGRP_ (Enhanced Interior Gateway Routing Protocol) - Cisco routing protocol, allows routers to share information about networks they can reach and the cost (bandwidth, delay) associatet with these routes
 	- _BGP_ (Border Gateway Protocol) - Primary routing protocol used on the Internet
 	- _RIP_ (Routing Information Protocol) - Used in small networks
+	- **NAT** - Network Address Translation
+
+# Networking Core Protocols
+
+- **DNS** - Domain name Server
+	- Layer 7 (Application)
+	- DNS records:
+		- **A record** - maps hostname to one or more IPv4 addresses
+		- **AAAA record** - same but for IPv6
+		- **CNAME record** - _Canonical Name_ - maps domain name to another domain
+		- **MX recortd** - _Mail Exchange_ - specifies the mail server for the domain
+- `whois`
+- **HTTP(S)**
+	- some commands: `GET`, `POST`, `PUT`, `DELETE`
+	- ports: 80 (HTTP) and 443 (HTTPS)
+- **FTP**
+	- some commands: `USER`, `PASS`, `RETR`, `STOR`
+	- port: 21
+- **SMTP**
+	- some commands:
+		- `HELO` or `ELHO` - initiates an SMTP session
+		- `MAIL FROM` - specifies the sender address
+		- `RCPT TO` - recipient address
+		- `DATA` - bgins the mail message
+		- `.` - end of an email message
+	- default port: 25
+- **POP3** - Post Office Protocol version 3
+	- for retrieving mail messages from server
+	- TCP port 110 is default
+- **IMAP** - allows sync across multiple devices
+	- _Internet Message Access Protocol_
+	- port 143
+
+# Networking Secure Protocols
+
+- **TLS** - Transport Layer Security
+- **SSL** - Secure Sockets Layer
+- adding TLS to HTTP, FTP etc. also forces ports change
+- **SSH** - Secure Shell - developed by Tatu Ylönen, 1995.
+	- port 22
+	- **SFTP** - SSH File Transfer Protocol
+		- easier to set up then FTPS
+
+# Wireshark: The Basics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
