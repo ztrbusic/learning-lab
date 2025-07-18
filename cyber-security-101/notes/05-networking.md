@@ -88,7 +88,11 @@
 - **ICMP** - Internet Control Message Protocol - network diagnostics and error reporting
 	- `ping` and `traceroute`
 - **Routing**
-	- _OSPF_ - routing protocol that enables users to share information on the network topology and calculates the most efficient path for data transmission.
+	- _OSPF_ (Open Shortest Path First) - routing protocol that enables users to share information on the network topology and calculates the most efficient path for data transmission.
+	- _EIGRP_ (Enhanced Interior Gateway Routing Protocol) - Cisco routing protocol, allows routers to share information about networks they can reach and the cost (bandwidth, delay) associatet with these routes
+	- _BGP_ (Border Gateway Protocol) - Primary routing protocol used on the Internet
+	- _RIP_ (Routing Information Protocol) - Used in small networks
+
 
 
 
