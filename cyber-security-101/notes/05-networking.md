@@ -87,6 +87,8 @@
 - **ARP** - Address Resolution Protocol - enables to find MAC addresses of another devices on the Ethernet
 - **ICMP** - Internet Control Message Protocol - network diagnostics and error reporting
 	- `ping` and `traceroute`
+- **Routing**
+	- _OSPF_ - routing protocol that enables users to share information on the network topology and calculates the most efficient path for data transmission.
 
 
 
