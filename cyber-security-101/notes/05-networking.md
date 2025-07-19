@@ -137,6 +137,17 @@
 
 # Wireshark: The Basics
 
+_nothing to see here..._
+
+# Tcpdump: The Basics
+
+- Terminal tool
+- `tcpdump`
+- `ip` - Linux = `ifconfig` on Mac
+
+<p align="center">
+<img src="../assets/images/02-tcpdump-commands.png" alt="TCP dump commands" width="50%">
+</p>
 
 
 
