@@ -127,9 +127,12 @@
 
 ## 2025-07-22
 **RPG game continued**
- - adding color
- - `from colorama import init, Fore, Style`
- 
+ - adding color:
+ 	- `from colorama import init, Fore, Style`
+ - making an executable:
+ 	- `pip install pyinstaller`
+ 	- `pyinstaller --onefile file.py`
+
 
 
 
