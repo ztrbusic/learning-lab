@@ -149,8 +149,33 @@ _nothing to see here..._
 <img src="../assets/images/02-tcpdump-commands.png" alt="TCP dump commands" width="50%">
 </p>
 
+- **FILTERING**
+- by host: `tcpdump host IP` or `tcpdump host HOSTNAME`
+- by port: `src port PORT_NUMBER`
+- by protocol: `tcpdump tcp`
+- logical operators can be used: `and`, `or`, `not`
+- by lenght: `greater LENGHT` or `less LENGHT`
+- manual: `man pcap-filter`
 
+- **DISPLAYING**
+- `-q` `-e` `-A` `-xx` `-X`
 
+# Nmap: The Basics
+
+- nmap is a powerful network scanner
+	- open-source, published in 1997.
+- `nmap 192.168.1.0/24` - scans the whole subnet (0-255)
+- `nmap -sL 192...` - just lists the devices
+- `nmap -sn 192...` - discovers hosts without checking services
+- network service - any process that is listening for incoming connections on TCP or UDP
+- `-sT` - connect scan
+- `-sS` - SYN scan - stealth
+- `-sU` - scan UDP services
+- `-O` - OS detection
+- `sV` - version detection
+- `-A` - OS, version, etc.
+- timings with `-T 0, -T 1` etc.
+- `-v` - verbose, `-d` - debugging
 
 
 
