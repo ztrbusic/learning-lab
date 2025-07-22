@@ -1,4 +1,6 @@
 import time, sys
+from colorama import init, Fore, Style
+
 def slow_print(text, delay):
 	for char in text:
 		sys.stdout.write(char)
@@ -24,13 +26,21 @@ slow_print("These are your stats:", 0.03)
 print(player)
 
 while True:
-	slow_print("Press *any* key to continue to the first room: ", 0.05)
-	user_input = input()
-	if user_input == "any":
-		break
-	else:
-		continue
-
+	slow_print("Press " + Fore.BLACK + "any key " + Style.RESET_ALL + "to continue to the first room: ", 0.05)
+	for attempt in range(4):
+		if attempt == 1:
+			slow_print("C'mon, this is a pun older than... I don't know... you!?", 0.05)
+			slow_print("Press " + Fore.BLACK + "any key " + Style.RESET_ALL + "to continue to the first room: ", 0.05)
+		elif attempt == 2:
+			slow_print("This is your last chance, for real!", 0.05)
+		elif attempt == 3:
+			slow_print("Goodbye!", 1)
+			sys.exit()
+		user_input = input()
+		if user_input == "any key":
+			break
+	break
+	
 slow_print(room_1["description"], 0.05)
 slow_print("This is the enemy and his stats:", 0.05)
 print(enemy_troll)
