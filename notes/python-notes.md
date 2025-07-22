@@ -125,7 +125,11 @@
 	- `.flush` - forces to show immediately (no buffering)
 	- `time.delay` - add delay per character
 
-
+## 2025-07-22
+**RPG game continued**
+ - adding color
+ - `from colorama import init, Fore, Style`
+ 
 
 
 
