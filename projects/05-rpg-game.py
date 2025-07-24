@@ -8,21 +8,22 @@ def slow_print(text, delay):
 		time.sleep(delay)
 	print()
 
-# slow_print("""
-# This is a simple RPG game.
-# You are a fierce warrior entering a dungeon.
-# You goal is to make simple choices to get to the end where you will have
-# three questions to answer.
-# If you answer the questions correctly, you will find out the meaning of life.
-# """, 0.1)
+slow_print(Fore.MAGENTA + "Simple RPG" + Style.RESET_ALL, 0.1)
+slow_print("""
+This is a simple RPG game.
+You are a fierce warrior entering a dungeon.
+You goal is to make simple choices to get to the end where you will have
+three questions to answer.
+If you answer the questions correctly, you will find out the meaning of life.
+""", 0.1)
 
 player = {"name": "", "health": 100, "damage": 10}
-enemy_troll = {"name": "Dungeon Troll", "health": 50, "damage": 5}
+enemy_troll = {"name": "Dungeon Troll", "health": 50000, "damage": 1000}
 room_1 = {"description": "This is the first room. A troll lingers inside", "visited": False}
 
 slow_print("Input player name: ", 0.1)
 player["name"] = input()
-slow_print("These are your stats:", 0.1)
+slow_print("Hi " + player["name"] + ". These are your stats:", 0.1)
 slow_print(f"""
 Name: {player['name']}
 Health: {player['health']}
