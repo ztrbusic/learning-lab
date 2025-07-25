@@ -133,6 +133,16 @@
  	- `pip install pyinstaller`
  	- `pyinstaller --onefile file.py`
 
+ ## 2025-07-25
+ **RPG game continues**
+ - learned `textwrap.dedent` of multiline f-strings
+ 	- eg:
+ 	```
+	 	print(textwrap.dedent(f"""
+	 					Some text.
+	 					"""))
+ 	```
+
 
 
 
