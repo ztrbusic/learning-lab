@@ -18,7 +18,7 @@ If you answer the questions correctly, you will find out the meaning of life.
 """, 0.1)
 
 player = {"name": "", "health": 100, "damage": 10}
-enemy_troll = {"name": "Dungeon Troll", "health": 50000, "damage": 1000}
+enemy_room_1 = {"name": "Dungeon Troll", "health": 50000, "damage": 1000}
 room_1 = {"description": "This is the first room. A troll lingers inside", "visited": False}
 
 slow_print("Input player name: ", 0.1)
@@ -50,7 +50,53 @@ slow_print(room_1["description"], 0.1)
 time.sleep(3)
 slow_print("This is the enemy and his stats:", 0.1)
 slow_print(f"""
-Enemy name: {enemy_troll['name']}
-Enemy health: {enemy_troll['health']}
-Enemy damage: {enemy_troll['damage']}
+Enemy name: {enemy_room_1['name']}
+Enemy health: {enemy_room_1['health']}
+Enemy damage: {enemy_room_1['damage']}
 """, 0.1)
+slow_print("Hmmmm... This enemy seems unbeatable. You have just started on your journey, it would be a shame to die so early.", 0.1)
+slow_print(	"""
+You have two choices:
+1. Fight,
+2. Run.
+Which one will it be?
+""", 0.1)
+choice_room_1 = input()
+if choice_room_1 == "1" or choice_room_1 == "1." or choice_room_1 == "Fight" or choice_room_1 == "1. Fight":
+	enemy_room_1["health"] -= 10
+	slow_print(f"""
+You deal 10 damage to the enemy.
+{enemy_room_1['name']} has {enemy_room_1['health']} health left.
+Enemy turn. {enemy_room_1['name']} deals {enemy_room_1['damage']} damage to {player['name']} .
+
+You are dead.
+
+Game over. 
+""", 0.1)
+	sys.exit()
+elif choice_room_1 == "2" or choice_room_1 == "2." or choice_room_1 == "Run" or choice_room_1 == "2. Run":
+	slow_print("You decided to run. Good. Your decision was wise, the enemy was too difficult for you, "
+	f"{player['name']}. But, in your attempt to flee quickly, you have fallen into a basement...", 0.1)
+else:
+	slow_print("Don't play games with me.", 0.5)
+	sys.exit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
