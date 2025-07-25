@@ -28,7 +28,7 @@ slow_print(f"""
 Name: {player['name']}
 Health: {player['health']}
 Damage: {player['damage']}
-""", 0.1)
+""", 0.05)
 
 while True:
 	slow_print("Press " + Fore.BLACK + "any key " + Style.RESET_ALL + "to continue to the first room: ", 0.1)
@@ -48,7 +48,7 @@ while True:
 	
 slow_print(room_1["description"], 0.1)
 time.sleep(3)
-slow_print("This is the enemy and his stats:", 0.1)
+slow_print("This is the enemy and his stats:", 0.05)
 slow_print(f"""
 Enemy name: {enemy_room_1['name']}
 Enemy health: {enemy_room_1['health']}
