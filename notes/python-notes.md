@@ -138,9 +138,9 @@
  - learned `textwrap.dedent` of multiline f-strings
  	- eg:
  	```
-	 	print(textwrap.dedent(f"""
-	 					Some text.
-	 					"""))
+ 	print(textwrap.dedent(f"""
+ 					Some text.
+ 					"""))
  	```
 
 
