@@ -53,7 +53,7 @@ while True:
 
 #Room 1
 slow_print(room_1["description"], 0.1)
-time.sleep(3)
+time.sleep(2)
 slow_print("This is the enemy and his stats:", 0.1)
 slow_print(textwrap.dedent(f"""
 			Enemy name: {enemy_room_1['name']}
