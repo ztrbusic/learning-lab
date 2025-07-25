@@ -139,8 +139,8 @@
  	- eg:
  	```
  	print(textwrap.dedent(f"""
- 					Some text.
- 					"""))
+ 		Some text.
+ 		"""))
  	```
 
 
