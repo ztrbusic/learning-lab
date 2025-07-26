@@ -1,4 +1,6 @@
-# Networking Concepts
+# Networking
+
+## Networking Concepts
 
 - **OSI model** - Open Systems Interconnection
 	- developed by ISO
@@ -79,7 +81,7 @@
 	- layers adding headers
 - `telnet` - Teletype Network - remote terminal connection
 
-# Networking Essentials
+## Networking Essentials
 
 - **DHCP** - Dynamic Host Configuration Protocol
 	- application level protocol that relies on UDP
@@ -94,7 +96,7 @@
 	- _RIP_ (Routing Information Protocol) - Used in small networks
 	- **NAT** - Network Address Translation
 
-# Networking Core Protocols
+## Networking Core Protocols
 
 - **DNS** - Domain name Server
 	- Layer 7 (Application)
@@ -125,7 +127,7 @@
 	- _Internet Message Access Protocol_
 	- port 143
 
-# Networking Secure Protocols
+## Networking Secure Protocols
 
 - **TLS** - Transport Layer Security
 - **SSL** - Secure Sockets Layer
@@ -135,11 +137,11 @@
 	- **SFTP** - SSH File Transfer Protocol
 		- easier to set up then FTPS
 
-# Wireshark: The Basics
+## Wireshark: The Basics
 
 _nothing to see here..._
 
-# Tcpdump: The Basics
+## Tcpdump: The Basics
 
 - Terminal tool
 - `tcpdump`
@@ -160,7 +162,7 @@ _nothing to see here..._
 - **DISPLAYING**
 - `-q` `-e` `-A` `-xx` `-X`
 
-# Nmap: The Basics
+## Nmap: The Basics
 
 - nmap is a powerful network scanner
 	- open-source, published in 1997.
