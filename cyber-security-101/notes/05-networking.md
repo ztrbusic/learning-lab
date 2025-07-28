@@ -1,7 +1,6 @@
 # Networking
 
 ## Networking Concepts
-
 - **OSI model** - Open Systems Interconnection
 	- developed by ISO
 	- _Please Do Not Throw Spinach Pizza Away_
@@ -82,7 +81,6 @@
 - `telnet` - Teletype Network - remote terminal connection
 
 ## Networking Essentials
-
 - **DHCP** - Dynamic Host Configuration Protocol
 	- application level protocol that relies on UDP
 	- steps - **D O R A** - Discover, Offer, Accept Acknowledge
@@ -97,7 +95,6 @@
 	- **NAT** - Network Address Translation
 
 ## Networking Core Protocols
-
 - **DNS** - Domain name Server
 	- Layer 7 (Application)
 	- DNS records:
@@ -128,7 +125,6 @@
 	- port 143
 
 ## Networking Secure Protocols
-
 - **TLS** - Transport Layer Security
 - **SSL** - Secure Sockets Layer
 - adding TLS to HTTP, FTP etc. also forces ports change
@@ -138,11 +134,9 @@
 		- easier to set up then FTPS
 
 ## Wireshark: The Basics
-
 _nothing to see here..._
 
 ## Tcpdump: The Basics
-
 - Terminal tool
 - `tcpdump`
 - `ip` - Linux = `ifconfig` on Mac
@@ -163,7 +157,6 @@ _nothing to see here..._
 - `-q` `-e` `-A` `-xx` `-X`
 
 ## Nmap: The Basics
-
 - nmap is a powerful network scanner
 	- open-source, published in 1997.
 - `nmap 192.168.1.0/24` - scans the whole subnet (0-255)
@@ -178,33 +171,6 @@ _nothing to see here..._
 - `-A` - OS, version, etc.
 - timings with `-T 0, -T 1` etc.
 - `-v` - verbose, `-d` - debugging
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
