@@ -38,3 +38,16 @@
 	- _pidgeonhole effect_
 	- MD5 and SHA1 - considered not secure
 - _password salting_
+- Linux stores passwords in `/etc/shadow`
+- hashed passwords are in format: `$prefix$option$salt$hash`
+- prefix - specifies the hashing algorithm
+	- `$y$`, `$gy$`, `$7$` etc.
+- Windows passwords - hashed using NTLM
+	- stored in SAM (Security Accounts Manager)
+- **hashcat**
+	- syntax: `hashcat -m <hash_type> -a <attack_mode> hashfile wordlist`
+- **HMAC** - Keyed-Hash Message Authentication Code
+	- for verification of authenticity and integrity of data
+
+## John the Ripper: The basics
+- 
