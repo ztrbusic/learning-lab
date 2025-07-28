@@ -50,4 +50,19 @@
 	- for verification of authenticity and integrity of data
 
 ## John the Ripper: The basics
-- 
+- P an NP - two classes of problems
+	- **P** - Polynomial Time - problems whose solutions can be found in polynomial time
+		- e.g. sorting a list
+		- hashing
+	- **NP** - Non-deterministic Polynomial Time - given solution can be checked quickly, but finding it can be hard
+		- unhashing
+- dictionary attacks
+
+**Using John**
+- `john -wordlist=[path to wordlist] [path to file]`
+- `-format=[format]` - use specific hash format
+- `unshadow`
+- `--single` - Single Crack mode - word mangling
+- `zip2john`
+- `rar2john`
+- `SSH2john`
