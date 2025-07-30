@@ -12,17 +12,16 @@ def slow_print(text, delay):
 #Player and enemy stats
 player = {"name": "", "health": 100, "damage": 10}
 enemy_room_1 = {"name": "Dungeon Troll", "health": 50000, "damage": 1000}
-room_1 = {"description": "This is the first room. A troll lingers inside"}
 
 #Intro
 slow_print(Fore.MAGENTA + "Simple RPG" + Style.RESET_ALL, 0.1)
 slow_print(textwrap.dedent(f"""
-			This is a simple RPG game.
+			This is a simple RPG game. {time.sleep(3)}
 			You are a fierce warrior entering a dungeon.
 			Your goal is to make simple choices to get to the end
 			where you will have three questions to answer.
 			If you answer the questions correctly, you will find out the meaning of {Fore.YELLOW}life{Style.RESET_ALL}.
-			"""), 0.1)
+			"""), 0.05)
 
 #Player initialization
 slow_print("Input player name: ", 0.1)
@@ -52,7 +51,7 @@ while True:
 	break
 
 #Room 1
-slow_print(room_1["description"], 0.1)
+slow_print("This is the first room. A troll lingers inside", 0.1)
 time.sleep(2)
 slow_print("This is the enemy and his stats:", 0.1)
 slow_print(textwrap.dedent(f"""
@@ -86,10 +85,16 @@ elif choice_room_1 == "2" or choice_room_1 == "2." or choice_room_1 == "Run" or 
 			But, in your attempt to flee quickly, you have fallen into a basement...
 			"""), 0.1)
 else:
-	slow_print("Don't play games with me.", 0.5)
+	slow_print("Don't play games with me.", 0.1)
 	sys.exit()
 
-#Room 2 - (need to define variable and make player find a key to leave)
+#Room 2
+time.sleep(2)
+slow_print("""
+			'Huh!? Where am I?'... it's pitch dark (not particulary suprising for a basement), damp
+			(also not suprising), and strangely slippery. Feels like something slimy is crawling up your legs...  
+			""", 0.1)
+
 
 
 
