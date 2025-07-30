@@ -88,43 +88,64 @@ enemy_room_1 = {"name": "Dungeon Troll", "health": 50000, "damage": 1000}
 # 	slow_print("Don't play games with me.", 0.05)
 # 	sys.exit()
 
-#Room 2
-time.sleep(2)
-slow_print(textwrap.dedent("""
-			'Huh!? Where am I?'... it's pitch dark (not particulary suprising for a basement), damp
-			(also not suprising), and strangely slippery. Feels like something slimy is crawling up your legs...
-			"""), 0.05)
-time.sleep(1)
-slow_print("You need to get out, and fast. There is a door but it is locked. You see a glowing keypad asking for a combination.", 0.05)
-time.sleep(1)
-slow_print("_ _ ", 0.2)
-slow_print(textwrap.dedent(f"""
-			You need to think fast, what could the number combination be!?
-			You remember the book you read just yesterday, sitting in front of a fire, not battling monsters and dugenons.
-			{Fore.YELLOW}The Hitchhikers Guide to the Galaxy{Style.RESET_ALL}...
-			"""), 0.05)
-for attempt in range(3):
-	if attempt == 1:
-		slow_print(textwrap.dedent("""
-			Wrong!
-			The slimy thing is starting to crawl further up, your sensitive parts are dangerously close.
-			The display reads: 'You have one more try.'
-			"""), 0.05)
-	elif attempt == 2:
-		slow_print(textwrap.dedent("""
-			WRONG!
-			You percieve the sliminess of what is actually a furry, brown substance clogging your mouth, eyes and ears.
-			You suffocate.
-			"""), 0.05)
-		sys.exit()
-	code_room_2 = input()
-	if code_room_2 == "42":
-		slow_print(textwrap.dedent("""
-				You hear a soft click of the lock, the door opens blinding you with the light outside.
-				This was never actually a basement...
-				"""), 0.1)
-		break
+# #Room 2
+# time.sleep(2)
+# slow_print(textwrap.dedent("""
+# 			'Huh!? Where am I?'... it's pitch dark (not particulary suprising for a basement), damp
+# 			(also not suprising), and strangely slippery. Feels like something slimy is crawling up your legs...
+# 			"""), 0.05)
+# time.sleep(1)
+# slow_print("You need to get out, and fast. There is a door but it is locked. You see a glowing keypad asking for a combination.", 0.05)
+# time.sleep(1)
+# slow_print("_ _ ", 0.2)
+# slow_print(textwrap.dedent(f"""
+# 			You need to think fast, what could the number combination be!?
+# 			You remember the book you read just yesterday, sitting in front of a fire, not battling monsters and dugenons.
+# 			{Fore.YELLOW}The Hitchhikers Guide to the Galaxy{Style.RESET_ALL}...
+# 			"""), 0.05)
+# for attempt in range(3):
+# 	if attempt == 1:
+# 		slow_print(textwrap.dedent("""
+# 			Wrong!
+# 			The slimy thing is starting to crawl further up, your sensitive parts are dangerously close.
+# 			The display reads: 'You have one more try.'
+# 			"""), 0.05)
+# 	elif attempt == 2:
+# 		slow_print(textwrap.dedent("""
+# 			WRONG!
+# 			You percieve the sliminess of what is actually a furry, brown substance clogging your mouth, eyes and ears.
+# 			You suffocate.
+# 			"""), 0.05)
+# 		sys.exit()
+# 	code_room_2 = input()
+# 	if code_room_2 == "42":
+# 		slow_print(textwrap.dedent("""
+# 				You hear a soft click of the lock, the door opens blinding you with the light outside.
+# 				This was never actually a basement...
+# 				"""), 0.1)
+# 		break
 
+#Room 3
+slow_print("""
+	         \   |   /         
+           .-*-.
+        ― (  ☀  ) ―
+           `-*-'
+         /   |   \
+
+                  .          .     .            .
+             .      .     /\     .    *  .   .
+                    .    /  \  *     .     .
+                .       /    \     .
+                     __/      \__
+               ___/              \___
+          ___/                      \___
+      ___/                            \___
+ ____/                                  \____
+/____________________________________________\\
+""", 0.01)
+
+slow_print()
 
 
 
