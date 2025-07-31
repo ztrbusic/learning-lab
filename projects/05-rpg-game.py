@@ -19,9 +19,8 @@ enemy_room_1 = {"name": "Dungeon Troll", "health": 50000, "damage": 1000}
 # slow_print(textwrap.dedent(f"""
 # 			This is a simple RPG game.
 # 			You are a fierce warrior entering a dungeon.
-# 			Your goal is to make simple choices to get to the end
-# 			where you will have three questions to answer.
-# 			If you answer the questions correctly, you will find out the meaning of {Fore.YELLOW}life{Style.RESET_ALL}.
+# 			Your goal is to make simple choices to get to the end.
+# 			If you play your choices right, you will find out the meaning of {Fore.YELLOW}life{Style.RESET_ALL}.
 # 			"""), 0.05)
 
 # #Player initialization
@@ -146,14 +145,14 @@ enemy_room_1 = {"name": "Dungeon Troll", "health": 50000, "damage": 1000}
 # /____________________________________________\\
 # """, 0.01)
 
-# slow_print(textwrap.dedent(f"""
-#             The view is perfect. A mountain covered in mist with the sun just barely peeking through the clouds.
-#             Behind, a shack. Our hero wonders how did he end up here. There is a path he follows to the river where he discovers
-#             something shiny at the bottom. Does he jump into the river to pick the item?
-#             {Fore.MAGENTA}(This feel vaguely familiar... Finding shiny items at the bottom of rivers, my precious...){Style.RESET_ALL}
-#             1. Yes
-#             2. No
-#             """), 0.05)
+slow_print(textwrap.dedent(f"""
+            The view is perfect. A mountain covered in mist with the sun just barely peeking through the clouds.
+            Behind, a shack. Our hero wonders how did he end up here. There is a path he follows to the river where he discovers
+            something shiny at the bottom. Does he jump into the river to pick the item?
+            {Fore.MAGENTA}(This feels vaguely familiar... Finding shiny items at the bottom of rivers, my precious...){Style.RESET_ALL}
+            1. Yes
+            2. No
+            """), 0.05)
 while True:
 	choice_room_3 = input()
 	if choice_room_3 == "1." or choice_room_3 == "1" or choice_room_3 == "Yes" or choice_room_3 == "1. Yes" or choice_room_3 == "1.Yes":
@@ -176,11 +175,59 @@ while True:
 
 #Room 4
 slow_print(textwrap.dedent("""
-			Following the path from the river, you find yourself in a dense and dark forest, immediately, the troll from the begginig jumps in front of you!
+			Following the path from the river, you find yourself in a dense and dark forest, immediately, the troll from the beginning jumps in front of you!
 			'AARGGGHHHHHH!' - says the troll.
 			"""), 0.05)
 if dagger == 1:
-	
+	slow_print(textwrap.dedent("""
+			You immediately reach for your dagger. The troll notices the shiny object in your hand and stops. Do you attack the troll or try to avoid him and run?
+			1. Attack
+			2. Run
+			"""), 0.05)
+	while True:
+		choice_room_4 = input()
+		if choice_room_4 == "1." or choice_room_4 == "1" or choice_room_4 == "Attack" or choice_room_4 == "1. Attack" or choice_room_4 == "1.Attack":
+			enemy_room_1["health"] -= player["damage"]
+			slow_print(f"You deal {player['damage']} damage to {enemy_room_1['name']}. His health drops to: {enemy_room_1['health']}", 0.05)
+			player["health"] -= enemy_room_1["damage"]
+			slow_print(f"{enemy_room_1['name']} deals {enemy_room_1['damage']} damage to you. Your health drops to: {player['health']}", 0.05)
+			slow_print(f"{Fore.MAGENTA}You win! The troll is dead. Congratulations!{Style.RESET_ALL}", 0.05)
+			sys.exit()
+		elif choice_room_4 == "2." or choice_room_4 == "2" or choice_room_4 == "Run" or choice_room_4 == "2. Run" or choice_room_4 == "1.Run":
+			slow_print(textwrap.dedent("""
+				You run. Dagger in hand. Unfortunately you trip on the roots, stumble, fall, and pierce yourself.
+				You die, the leaves cover your remains. Nobody knows or remembers your resting place."""), 0.05)
+			sys.exit()
+		else:
+			slow_print("Please input the correct value", 0.05)
+else:
+	slow_print(textwrap.dedent("""
+			You remember how useful would now be to have that shiny object, possibly a weapon of some kind, that you left on the bottom of the river.
+			Still, you have your fists and need to decide, to run or to attack the troll:
+			1. Attack
+			2. Run
+			"""), 0.05)
+	while True:
+		choice_room_4 = input()
+		if choice_room_4 == "1." or choice_room_4 == "1" or choice_room_4 == "Attack" or choice_room_4 == "1. Attack" or choice_room_4 == "1.Attack":
+			enemy_room_1["health"] -= player["damage"]
+			slow_print(f"You deal {player['damage']} damage to {enemy_room_1['name']}. His health drops to: {enemy_room_1['health']}", 0.05)
+			player["health"] -= enemy_room_1["damage"]
+			slow_print(f"{enemy_room_1['name']} deals {enemy_room_1['damage']} damage to you. Your health drops to: {player['health']}", 0.05)
+			slow_print(f"You die. {enemy_room_1['name']} eats your remains. Game over.", 0.05)
+			sys.exit()
+		elif choice_room_4 == "2." or choice_room_4 == "2" or choice_room_4 == "Run" or choice_room_4 == "2. Run" or choice_room_4 == "1.Run":
+			slow_print(textwrap.dedent(f"""
+			You slowly back up from the {enemy_room_1['name']} and quietly leave the scene. You find youself in front of a big tree, probably the oldest tree in the forest. The tree speaks:
+			'How are you my child? You made all the right choices in your journey and you will be rewarded.
+			{Fore.YELLOW}Life has no meaning... The hardest thing to grasp is the silence, the stillness of thoughts that lead to nowhere and have no purpose.
+			Make peace with that, and you will be content. Enjoy the passing of time, do nice things, and do not expect anything in return.
+			Go now!{Style.RESET_ALL}'
+			"""), 0.05)
+			sys.exit()
+		else:
+			slow_print("Please input the correct value", 0.05)
+
 
 
 
