@@ -78,6 +78,8 @@ if choice_room_1 == "1" or choice_room_1 == "1." or choice_room_1 == "Fight" or 
 
 			Game over.
 			"""), 0.05)
+	slow_print("Press any key to exit...", 0.05)
+	input()
 	sys.exit()
 elif choice_room_1 == "2" or choice_room_1 == "2." or choice_room_1 == "Run" or choice_room_1 == "2. Run":
 	slow_print(textwrap.dedent(f"""
@@ -116,6 +118,8 @@ for attempt in range(3):
 			You perceive the sliminess of what is actually a furry, brown substance clogging your mouth, eyes and ears.
 			You suffocate.
 			"""), 0.05)
+		slow_print("Press any key to exit...", 0.05)
+		input()
 		sys.exit()
 	code_room_2 = input()
 	if code_room_2 == "42":
