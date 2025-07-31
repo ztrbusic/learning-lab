@@ -125,7 +125,7 @@ for attempt in range(3):
 				"""), 0.1)
 		break
 
-Room 3
+#Room 3
 slow_print("""
 	         \   |   /         
            .-*-.
