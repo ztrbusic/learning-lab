@@ -192,11 +192,15 @@ if dagger == 1:
 			player["health"] -= enemy_room_1["damage"]
 			slow_print(f"{enemy_room_1['name']} deals {enemy_room_1['damage']} damage to you. Your health drops to: {player['health']}", 0.05)
 			slow_print(f"{Fore.MAGENTA}You win! The troll is dead. Congratulations!{Style.RESET_ALL}", 0.05)
+			slow_print("Press any key to exit...", 0.05)
+			input()
 			sys.exit()
 		elif choice_room_4 == "2." or choice_room_4 == "2" or choice_room_4 == "Run" or choice_room_4 == "2. Run" or choice_room_4 == "1.Run":
 			slow_print(textwrap.dedent("""
 				You run. Dagger in hand. Unfortunately you trip on the roots, stumble, fall, and pierce yourself.
 				You die, the leaves cover your remains. Nobody knows or remembers your resting place."""), 0.05)
+			slow_print("Press any key to exit...", 0.05)
+			input()
 			sys.exit()
 		else:
 			slow_print("Please input the correct value", 0.05)
@@ -215,6 +219,8 @@ else:
 			player["health"] -= enemy_room_1["damage"]
 			slow_print(f"{enemy_room_1['name']} deals {enemy_room_1['damage']} damage to you. Your health drops to: {player['health']}", 0.05)
 			slow_print(f"You die. {enemy_room_1['name']} eats your remains. Game over.", 0.05)
+			slow_print("Press any key to exit...", 0.05)
+			input()
 			sys.exit()
 		elif choice_room_4 == "2." or choice_room_4 == "2" or choice_room_4 == "Run" or choice_room_4 == "2. Run" or choice_room_4 == "1.Run":
 			slow_print(textwrap.dedent(f"""
@@ -224,6 +230,8 @@ else:
 			Make peace with that, and you will be content. Enjoy the passing of time, do nice things, and do not expect anything in return.
 			Go now!{Style.RESET_ALL}'
 			"""), 0.05)
+			slow_print("Press any key to exit...", 0.05)
+			input()
 			sys.exit()
 		else:
 			slow_print("Please input the correct value", 0.05)
