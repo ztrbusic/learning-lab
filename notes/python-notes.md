@@ -143,6 +143,47 @@
  		"""))
  	```
 
+## 2025-08-04
+**Automate the Boring Stuff Part II**
+**RegEx**
+- `\d` - digit character
+- `{x}` - do something _x_ times
+- `import re` - all regex functions for Python
+- `re.compile` - returns _Regex_ object
+- `.search()` - searches the passed string for any matches
+- `.group()` - extract matched text from a `.search()`
+- _mo_ - Match object
+- make groups with `()` - e.g. `(r"(\d\d\d)-(\d\d\d-\d\d\d\d)")`
+- `mo.groups()` - returns a tuple with all groups
+- `\(` and `\)` - are escapes for parentheses - when you need to search for ( and )
+- works for all special characters in RegEx
+	- `. ^ $ * + ? { } [ ] \ | ( )`
+- piping with `|` - to match one of many expressions
+	- | outside () - match either entire option A or option B
+	- | inside () - match one of several possibilities as part of a group
+- optional matching with `(xy)?`
+- match zero or more with `*`
+- match one or more with `+`
+- repetitions - `{}`
+	- can be range, min-max, e.g. - `{3,5}`, `{3,}`, `{,5}`
+- regex is **greedy** by default
+	- match longest string possible
+	- non greedy, **lazy**, matches shortest possible - `{3,5}?`
+- `findall()`
+	- unlike `search()` it finds **all** matched strings
+	- returns list as long as there are no groups
+	- returns a list of tuples if there **are** groups
+		- e.g. `[('415', '555', '9999'), ('212', '555', '0000')]`
+- _Character Classes_
+	- `\d` - numeric digits from 0-9
+	- `\D` - any character that is _not_ a numeric digit 0-9
+	- `\w` - any letter, numeric digit, or underscore
+	- `\W` - any character that is _not_ a letter, numeric or underscore
+	- `\s` - any space, tab, or newline
+	- `\S` - any character that is _not_ a space, tab, or a newline
+
+
+
 
 
 
