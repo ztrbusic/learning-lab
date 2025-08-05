@@ -182,8 +182,17 @@
 	- `\s` - any space, tab, or newline
 	- `\S` - any character that is _not_ a space, tab, or a newline
 
-
-
+## 2025-08-05
+- making my own character classes e.g. - `[a-zA-Z0-9]`
+	- don't need escape characters inside square brackets
+- negative character class - `[^aeiouAEIOU]`
+	- match all characters that are **not** in the character class
+- `^` and `$` match the beggining or the end
+- `.` - wildcard
+- `.*` - match **everything** - uses greedy mode
+- `re.DOTALL` - match also `\n` with `.*`
+- `re.IGNORECASE` or `re.I` - ignores case, e.g. `(r"robocop", re.I)`
+- `sub()` - substitutes found text
 
 
 
