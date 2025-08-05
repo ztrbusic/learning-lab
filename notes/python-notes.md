@@ -145,6 +145,7 @@
 
 ## 2025-08-04
 **Automate the Boring Stuff Part II**
+
 **RegEx**
 - `\d` - digit character
 - `{x}` - do something _x_ times
@@ -193,6 +194,9 @@
 - `re.DOTALL` - match also `\n` with `.*`
 - `re.IGNORECASE` or `re.I` - ignores case, e.g. `(r"robocop", re.I)`
 - `sub()` - substitutes found text
+- `re.VERBOSE` - ignore whitespace and comments inside regex string
+- `|` - _bitwise OR_ operator (pipe) - `re.IGNORECASE | re.DOTALL` etc.
+- 
 
 
 
