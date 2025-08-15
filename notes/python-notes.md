@@ -196,9 +196,6 @@
 - `sub()` - substitutes found text
 - `re.VERBOSE` - ignore whitespace and comments inside regex string
 - `|` - _bitwise OR_ operator (pipe) - `re.IGNORECASE | re.DOTALL` etc.
-- 
-
-
 
 
 
