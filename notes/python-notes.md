@@ -197,6 +197,9 @@
 - `re.VERBOSE` - ignore whitespace and comments inside regex string
 - `|` - _bitwise OR_ operator (pipe) - `re.IGNORECASE | re.DOTALL` etc.
 
+## 2025-08-22
+**RegEx recap**
+
 
 
 
