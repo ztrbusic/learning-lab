@@ -1,4 +1,4 @@
-# Python Learning Repository
+# Learning Laboratory
 
 This is my personal repository for learning Python. It includes both code exercises and notes as I progress through various topics and projects.
 
