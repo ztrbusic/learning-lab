@@ -35,4 +35,4 @@
 ## Security
 - `Get-FileHash` - calculate file hash
 - **IOC** - Indicator of Compromise (forensics term)
-- `Invoke-Command` - run commands remotely
+- `Invoke-Command` - run commands remotelys
