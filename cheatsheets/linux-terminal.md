@@ -1,4 +1,4 @@
-# Linux Cheatsheet
+# Linux Terminal Cheatsheet
 
 ## Terminal Commands:
 - `ls` - list files and directories, use `ls -la` to list hidden
@@ -49,3 +49,12 @@
 - `systemctl` - interact with the **systemd** process
 - `fg` - make process run in foreground again
 - `cron` - schedule tasks
+
+## Shells
+- **Bash** - Bourne Again Shell (default on many distros, scripting support)
+- **Zsh** - Z Shell (customizable, used on macOS)
+- **Fish** - Friendly Interactive Shell (user-friendly, autocompletion)
+
+### Scripting
+- `#!/bin/bash` - shebang, defines interpreter for script
+- `chmod +x script.sh` - make script executable
