@@ -11,7 +11,8 @@ This is my personal repository for learning Cybersecurity, Python and CS in gene
 
 - `archive/` – Anything old/raw that can be of later but not immediate use. Also old notes and temporary files. Will be curated in time and files will be appraised and dleted when necessary.
 - `cheatsheets/` – Learning code and terminal commands can be overwhelming. Cheatsheets help me quickly remember them and be more efficient in their use. Possible subdirectories will be created for concepts that require more space and granularity (e.g. `python/`).
-- `projects/` -  Small tools that make life easier. Cybersecurity labs and exercises. Built for learning purposes but have practical value. In addition, subdirectory `python-learning/` contains learning code files that I create when doing assingments and practical exercises.
+- `cyber-labs` - My collection of scripts, exploits, and practice labs from TryHackMe and other cybersecurity training exercises, some invented myself.
+- `code-projects/` -  Small tools that make life easier. Cybersecurity labs and exercises. Built for learning purposes but have practical value. In addition, subdirectory `python-learning/` contains learning code files that I create when doing assingments and practical exercises.
 - `summaries/` - Short texts that summarize key concepts. Summaries will be used as milestones after finishing a big chapter or having "I finally get it" moments.
 
 
