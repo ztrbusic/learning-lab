@@ -14,6 +14,7 @@
 - `file` - describes the file
 - `su` - login as another user in the current environment
 - `su -l` - login as another user but in their own environment
+- `touch` - creates a file
 
 ## Operators:
 - `&` - puts the command in background immediately, e.g. `firefox &`
