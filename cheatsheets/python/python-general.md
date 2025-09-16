@@ -13,3 +13,8 @@
 - **pyinstaller**
 	- `pip install pyinstaller`
  	- `pyinstaller --onefile file.py`
+
+- `enumerate()` - returns index + value for lists, strings, etc.
+- `sum()` - works on any iterable with numbers
+- `raise` - give error
+- ``
