@@ -18,3 +18,7 @@
 - `sum()` - works on any iterable with numbers
 - `raise` - give error
 - ``
+
+- **ripgrep**
+	- `rg -i "keyword`
+	- `subl PATH:LINE`

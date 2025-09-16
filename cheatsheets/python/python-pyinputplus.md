@@ -11,5 +11,6 @@
 
 - `pyip.inputStr()` - arguments:
 	- `prompt=" "`, `default`, `blank`, `timeout`, `limit`
-	- `allowRegexes`, `blockRegexes`, `applyFunc`, `postValidateApplyFunc`, `allowlistRegexes`, `blocklistRegexes`
+	- `allowRegexes`, `blockRegexes`, `applyFunc`, `postValidateApplyFunc`
+	- `allowlistRegexes`, `blocklistRegexes`
 	- `allowRegexes=[(r"^0$, "Yes, it is zero")]`
