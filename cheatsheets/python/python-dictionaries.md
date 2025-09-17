@@ -1,5 +1,6 @@
 # Python Dictionaries Cheatsheet
 
+- `dictionary = {"key": value, "key2": value2, ...}`
 - `.keys()`, `.values()`, `.items()`
 - `list(dictionary.keys())` - make a list out of dictionary
 - `for k, i in dictionary.items()` - tuple unpacking
@@ -15,3 +16,4 @@
 - `"cat" in spam` vs. `"cat" in spam.keys()` - no difference
 - `"cat" in spam` vs. `"cat" in spam.values()` - checks for "cat" in values of dictionary named spam
 - `some_dictionary[key] = value` - used to change a value in dictionary
+- `value += some_dictionary[key]` - pull up value and add to total
