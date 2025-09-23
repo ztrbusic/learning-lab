@@ -14,3 +14,5 @@
 	- `allowRegexes`, `blockRegexes`, `applyFunc`, `postValidateApplyFunc`
 	- `allowlistRegexes`, `blocklistRegexes`
 	- `allowRegexes=[(r"^0$, "Yes, it is zero")]`
+
+- `VARIABLE = pyip.inputMenu(list(DICTIONARY.keys())` - input dict keys as choices in menu
