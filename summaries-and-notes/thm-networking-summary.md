@@ -1,4 +1,4 @@
-# Networking Summary
+# Networking - Summary
 
 - Learned about the **OSI** and **TCP/IP** models — OSI is conceptual, TCP/IP is what’s actually implemented. Helpful mnemonic for OSI: “Please Do Not Throw Spinach Pizza Away.” Understood differences between TCP (reliable, handshake) and UDP (faster, no delivery guarantee).
 - Explored **addressing**: IPv4, broadcast, subnet masks, and private ranges.
