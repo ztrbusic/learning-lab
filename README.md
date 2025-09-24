@@ -4,8 +4,8 @@ This is my personal repository for learning Cybersecurity, Python and CS in gene
 
 ## 🚀 Highlights
 
-- 🕹️ [**Simple RPG**](projects/05-rpg-game.py) is a short, text-based RPG written in Python featuring branching choices, humour, and a few surprises. Playable directly in the terminal or as a standalone .exe for Windows — no Python installation needed. [Download the game (.exe)](https://github.com/ztrbusic/python-learning/releases/download/rpg-v1.0/05-rpg-game-v1.exe)
-- 📚 [**Numerus Currens**](projects/02-numerus-currens.py) is a simple console-based library management simulator. It helps users practice entering, checking, and updating book records using basic text input and file handling in Python. Users can add shelves, add books to specific shelves, list all books, and search for books by keyword.
+- 🕹️ [**Simple RPG**](code-projects/03-rpg-game.py) is a short, text-based RPG written in Python featuring branching choices, humour, and a few surprises. Playable directly in the terminal or as a standalone .exe for Windows — no Python installation needed. [Download the game (.exe)](https://github.com/ztrbusic/learning-lab/releases/download/rpg-v1.0/05-rpg-game-v1.exe)
+- 📚 [**Numerus Currens**](code-projects/02-numerus-currens.py) is a simple console-based library management simulator. It helps users practice entering, checking, and updating book records using basic text input and file handling in Python. Users can add shelves, add books to specific shelves, list all books, and search for books by keyword.
 
 ## 📁 Structure
 
